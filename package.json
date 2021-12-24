@@ -1,13 +1,23 @@
 {
   "name": "@learnly/simple-reader",
   "version": "1.0.0",
-  "description": "Read input sync, similar to Java scanner",
+  "description": "Read input line by line, synchronously. Similar to Java Scanner",
   "main": "index.js",
+  "keywords": [
+    "reader",
+    "env-reader",
+    "simple-reader",
+    "synchronous-reader"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaidqureshi2/simple-reader"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Zaid Qureshi <zaid.qureshi94@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "readline-sync": "^1.4.10"
   }
