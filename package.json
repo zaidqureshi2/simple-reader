@@ -1,6 +1,6 @@
 {
   "name": "@learnly/simple-reader",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Read input line by line, synchronously. Similar to Java Scanner",
   "main": "index.js",
   "keywords": [

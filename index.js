@@ -8,7 +8,7 @@ if (process.env.INPUT_LINES) {
 function nextLine() {
   if ((currentLineIndex + 1) > lines.length) {
     if (!process.stdin.isTTY) {
-      throw "no more lines to read";
+      throw new Error("no more lines to read");
     }
     return readlineSync.prompt();
   }
