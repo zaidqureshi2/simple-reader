@@ -1,9 +1,15 @@
 const readlineSync = require('readline-sync');
 let lines = [];
 let currentLineIndex = 0;
-if (process.env.INPUT_LINES) {
-  lines = process.env.INPUT_LINES.split('\n');
+
+function _resetInputLines() {
+  if (process.env.INPUT_LINES) {
+    lines = process.env.INPUT_LINES.split('\n');
+    currentLineIndex = 0;
+  }
 }
+
+_resetInputLines();
 
 function nextLine() {
   if ((currentLineIndex + 1) > lines.length) {
@@ -16,5 +22,6 @@ function nextLine() {
 }
 
 module.exports = {
-  nextLine
+  nextLine,
+  _resetInputLines
 }
